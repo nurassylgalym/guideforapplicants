@@ -1,0 +1,281 @@
+    body {
+            margin: 0;
+
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            color: #6c7279;
+            -webkit-font-smoothing: antialiased;
+
+            background-color: #31344e;;
+
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
+            margin: 0;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        A {
+            color: white; /* Цвет ссылок */
+        }
+        A:visited {
+            color: #white; /* Цвет посещенных ссылок */
+        }
+        A:active {
+            color: skyblue; /* Цвет активных ссылок */
+        }
+        A:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul {
+            font-size: 22px;   
+        }
+
+        /* Container
+        ===================*/
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header
+        ===================*/
+
+        .header {
+            width: 100%;
+            height: 100px;
+            background-color: #31344e;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .header.fixed {
+            height: auto;
+
+            position: fixed;
+
+            background-color: #31344e;
+        }
+
+        .header.fixed .header__inner {
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            border-bottom: 0;
+        }
+
+        .header__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 35px 0;
+
+            border-bottom: 1px solid #515369;
+        }
+
+        .header__logo {
+            color: #fff;
+            text-decoration: none; /* Убирает подчеркивание для ссылок */
+        }
+
+        .header__logo:hover {
+            text-decoration: none; /* Добавляем подчеркивание при наведении курсора на ссылку */
+            color: white; /* Ссылка красного цвета */
+        }
+        /* Nav
+        ===================*/
+
+        .nav {
+            display: flex;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .nav__link {
+            margin-left: 60px;
+            ,margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+            opacity: .75;
+
+            transition: opacity .1s linear;
+        }
+
+        .nav__link:first-child {
+            margin-left: 0;
+        }
+
+        .nav__link:hover {
+            opacity: 1;
+        }
+
+
+
+        .intro__title {
+            margin-top: 200px;
+            margin-bottom: 150px;
+            display: flex;
+            flex-wrap: wrap;
+
+            font-size: 22px;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+
+        .intro__text {
+            margin-bottom: 50px;
+
+            font-size: 18px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: none;
+        }
+
+        .end__text {
+            margin-top: 100px;
+            margin-bottom: 50px;
+
+            font-size: 18px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: none;   
+        }
+
+    /* Footer */
+
+    .footer {
+
+    }
+
+    .footer__inner {
+        margin-top: 150px;
+        margin-bottom: 5px;
+        padding: 30px 0;
+    }
+
+    .footer__block {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer__block:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer {
+        background-color: #3a3e64;
+    }
+
+    .footer__inner {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 70px 0;
+    }
+
+    .footer__block {
+        width: 33.33333%;
+        padding: 0 15px;
+
+        text-align: center;
+    }
+
+    .footer__title {
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .footer__address {
+        font-size: 14px;
+        line-height: 1.5;
+        font-style: normal;
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .footer__text {
+        font-size: 14px;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, .5);
+    }
+
+    /* Copyright
+    ===================*/
+
+    .copyright {
+        padding: 20px 0;
+
+        background-color: #313454;
+    }
+
+    .copyright__text {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #808080;
+    }
+
+    .copyright__text span {
+        color: #fff;
+    }
+
+    .btn {
+        display: inline-block;
+        vertical-align: top;
+        padding: 14px 40px;
+
+        margin-top: 100px;
+
+        border-radius: 2px;
+        border: 0;
+        cursor: pointer;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+
+        transition: background .1s linear;
+    }
+
+    .btn--red {
+        background-color: #e84545;
+    }
+
+    .btn--red:hover {
+        background-color: #dd3434;
+    }
+
+    .btn--long {
+        min-width: 280px;
+    }
+
